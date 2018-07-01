@@ -2,9 +2,7 @@ import React from "react";
 
 const Navbar = props => (
     <nav className="navbar navbar-expand-lg navbar-light bg-danger container-fluid-nav text-center">
-        <a className="navbar-brand text-center" href="#" style={{weight:"bolder", size:"20px"}}>
-            Clicky Game
-        </a>
+
         <button
             className="navbar-toggler"
             data-toggle="collapse"
@@ -16,22 +14,16 @@ const Navbar = props => (
             <span className="navbar-toggler-icon" />
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
-                    <a className="nav-link" href="#">
-                        {props.guess} <span className="sr-only">(current)</span>
-                    </a>
+        <div class="navbar-collapse collapse justify-content-center" id="collapsingNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">{props.guess}  <span class="sr-only">Home</span></a>
                 </li>
-                <li className="nav-item active">
-                    <a className="nav-link" href="#" style={{weight:"bolder", size:"20px"}}>
-                        Score: {props.score}
-                    </a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Score: {props.score}</a>
                 </li>
-                <li className="nav-item active">
-                    <a className="nav-link" href="#">
-                        Top Score: {props.topScore}
-                    </a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Top Score: {props.topScore}</a>
                 </li>
             </ul>
         </div>

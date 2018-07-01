@@ -71,8 +71,7 @@ class App extends Component {
       topScore={this.state.topScore}
       guess={this.state.guess}
       />
-      <Title className="bg-primary">Clicky Game!</Title>
-
+      <Title className="bg-primary">Clicky Game!</Title>      
       <FlipMove>
       <Wrapper>
  
